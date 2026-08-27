@@ -1,5 +1,3 @@
-# employee-churn-analysis
-
 # Enterprise Workforce Attrition & Headcount Forecasting
 
 A predictive analytics and time-series forecasting pipeline built in R to analyze employee attrition drivers and project monthly organizational turnover.
@@ -36,6 +34,7 @@ Trained and evaluated multiple tree-based classifiers on a 70/30 stratified trai
 * **`tree` & `rpart` Classification Trees:** Baseline interpretability and cost-complexity pruning (`plotcp`).
 * **`C5.0` Decision Trees:** Evaluated boosted rules and extracted variable importance (`C5imp`) to surface key turnover indicators.
 * **Evaluation Metrics:** Accuracy, Precision, Recall, F1-Score, and ROC curves across classification probability thresholds.
+* **Model Performance:** Evaluated tree-based classifiers against test data, with the **C5.0 decision tree model achieving the top baseline accuracy of 76.5%** and isolating compensation ratio and tenure as primary predictors.
 
 ### 3. Headcount Demand Forecasting
 * Aggregated historical monthly termination records into a regular time series (`ts`, frequency = 12).
@@ -44,9 +43,14 @@ Trained and evaluated multiple tree-based classifiers on a 70/30 stratified trai
 
 ---
 
-## 🚀 How to Run
+🚀 How to Run
+Clone the repository:
+git clone https://github.com/bridgetteheiner/employee-churn-analysis.git
+cd employee-churn-analysis
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/workforce-attrition-forecasting.git
-   cd workforce-attrition-forecasting
+Install dependencies in R:
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tidyverse, tidymodels, caret, recipes, tree, rpart, rpart.plot, C50, ROCR, pROC, PRROC, forecast, readxl)
+
+Execute the analysis in R:
+source("employee_attrition_models.R")
