@@ -94,27 +94,6 @@ To prevent reactive hiring cycles, historical departure dates were aggregated to
 
 ---
 
-## 📂 Repository Structure
-
-    project_root/
-    |-- data/
-    |   \-- raw/                   # Schema definitions (Anonymized) 🔒
-    |-- notebooks/
-    |   |-- 01_eda_and_cleaning.ipynb 📓
-    |   |-- 02_feature_engineering.ipynb 📓
-    |   |-- 03_classification_models.ipynb 📓
-    |   \-- 04_prophet_time_series.ipynb 📓
-    |-- src/
-    |   |-- preprocessing.py       # Imputation and encoding pipelines 🐍
-    |   |-- modeling.py            # Training and evaluation routines 🐍
-    |   \-- forecasting.R          # Prophet and time-series script 📊
-    |-- reports/
-    |   \-- executive_summary.pdf  # Stakeholder presentation deck 📑
-    |-- README.md
-    \-- requirements.txt
-
----
-
 ## 💻 Tech Stack & Libraries
 
 * **Languages:** Python 3.9+ 🐍, R 4.2+ 📊
