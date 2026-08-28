@@ -1,10 +1,6 @@
 # 📊 Enterprise Workforce Churn & Capacity Forecasting Model
 ### A 3-Part Analytical Framework (Who, When, Where) for Global Headcount Retention 🚀
 
-[![R](https://img.shields.io/badge/R-4.2+-blue.svg)](https://www.r-project.org/)
-[![Python](https://img.shields.io/badge/Python-3.9+-green.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ---
 
 ## 🌟 Portfolio & Website Summary Card
